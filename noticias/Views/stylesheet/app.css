@@ -1,0 +1,16 @@
+.App{
+    width: 100%;
+    display: block;
+}
+
+.bodyApp{
+    margin-top: 0.5em;
+    width: 99%;
+    height: 40%;
+    position: absolute;   
+}
+
+.body{
+    font-family: 'Noto Sans', sans-serif;
+}
+

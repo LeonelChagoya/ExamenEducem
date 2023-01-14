@@ -1,0 +1,9 @@
+.vs/
+node_modules/
+bin/
+obj/
+packages/
+Static/*/*.js
+Static/*/*.js.map
+!Static/Shared/*.js
+*.csproj.user
