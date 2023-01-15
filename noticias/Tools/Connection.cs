@@ -7,26 +7,19 @@ using DataFramework;
 namespace DashboardProduccion.Tools {
     public static class Connection {
         private static string appConStr;
-        private static string fimaConStr;
-        private static string fimaSistemaChecadasConStr;
+     
 
-        public static DataManager App { get{ return new DataManager(appConStr); }}
-        public static DataManager Fima { get { return new DataManager(fimaConStr); }}
-        public static DataManager FimaSistemaChecadas { get { return new DataManager(fimaSistemaChecadasConStr); }}
+        public static DataManager Exa { get{ return new DataManager(appConStr); }}
+      
 
-        public static string AppDBName;
-        public static string FimaDBName;
-        public static string FimaSistemaChecadasDBName;
+        public static string ExaDBName;
+       
 
         static Connection() {
-            appConStr = ConfigurationManager.ConnectionStrings["APP"].ConnectionString;
-            AppDBName = GetDBName(appConStr);
+            appConStr = ConfigurationManager.ConnectionStrings["EXA"].ConnectionString;
+            ExaDBName = GetDBName(appConStr);
 
-            fimaConStr = ConfigurationManager.ConnectionStrings["FIMA"].ConnectionString;
-            FimaDBName = GetDBName(fimaConStr);
-
-            fimaSistemaChecadasConStr = ConfigurationManager.ConnectionStrings["FIMASistemaChecadas"].ConnectionString;
-            FimaSistemaChecadasDBName = GetDBName(fimaSistemaChecadasConStr);
+            
         }
 
         private static string GetDBName(string configString) {

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("~/fonts/NotoSans-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("~/fonts/NotoSans-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+
+body {
+  margin: 0px;
+  background-color: #e5e0e0;
+  font-family: "Noto Sans", sans-serif;
+}
+.container {
+  margin: 5px;
+}
+.header {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn,
+.icon {
+  cursor: pointer;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 5px;
+  width: 185px;
+  font-size: 18px;
+  padding: 10px;
+  height: inherit;
+}
+.btn.abrirModal.Confirmacion {
+  background-color: #28a745 !important;
+}
+.btn.abrirModal.Funcion {
+  background-color: #17a2b8 !important;
+}
